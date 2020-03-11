@@ -22,7 +22,7 @@ def format_response(weather):
     return final_str
 
 def get_weather(city):
-    weather_key = '6a801b642ff547be34c83afa4becc46c'
+    weather_key = '...' #<----- There should be a private personal key here from https://openweathermap.org
     url = 'https://api.openweathermap.org/data/2.5/weather'
     params = {'APPID': weather_key, 'q': city, 'units': 'Metric'}
     response = requests.get(url, params=params)
